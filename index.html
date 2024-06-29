@@ -13,54 +13,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <!-- Style -->
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .center-text {
+      text-align: center;
+    }
+    .link a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .link img {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 
 <body>
-
-  <body>
-    <audio class="song" loop autoplay>
-      <source src="deadbydaylight_lobbysound.mp3">
-      </source>
-      Your browser isn't invited for super fun audio time.
-    </audio>
-  </body>
+  <audio class="song" loop autoplay>
+    <source src="deadbydaylight_lobbysound.mp3">
+    </source>
+    Your browser isn't invited for super fun audio time.
+  </audio>
   <div class="total animate__animated animate__zoomIn">
     <!-- profile picture -->
     <div class="profile">
-      <img src="dbd_doktor.gif" alt="error gif" class="animate__animated
-          animate__pulse animate__infinite" />
+      <img src="dbd_doktor.gif" alt="error gif" class="animate__animated animate__pulse animate__infinite" />
       <p class="animate__animated animate__fadeInDownBig">WELCOME </p>
     </div>
 
     <!-- link tree button -->
     <div class="link">
-      <a href="https://saweria.co/Putraardians" class="animate__animated animate__bounceInLeft">
+      <a href="https://saweria.co/Putraardians" class="animate__animated animate__bounceInLeft center-text">
         <img src="saweria.png" alt="Donate" class="icon">
-          SAWERIA <br>
-          (BISA REQ KILLER/SURVIVOR) (SUBATHON 1K PER 1 MENIT)<br>
-    </a>
-      <a href="https://sociabuzz.com/putra_ardiansyah/tribe" class="animate__animated animate__bounceInLeft">
-        <img src="sociabuzz.png" alt="Donate" class="icon">
-          SOCIABUZZ <br>
-          (BISA PUTAR SPINN WHEEL)
+        SAWERIA <br>
+        (BISA REQ KILLER/SURVIVOR + BONUS MORI) <br>
+        (SUBATHON 1K PER 1 MENIT)
       </a>
-      <a href="https://discord.gg/bg6rXvE8MQ" class="animate__animated animate__bounceInRight animate__delay-3s">
-        <img src="discord.png" alt="Discord Mabar&seruan" class="icon">Discord Mabar </a>
-      <a href="https://www.tiktok.com/@putraardianss"
-        class="animate__animated animate__bounceInRight animate__delay-1s">
+      <a href="https://sociabuzz.com/putra_ardiansyah/tribe" class="animate__animated animate__bounceInLeft center-text">
+        <img src="sociabuzz.png" alt="Donate" class="icon">
+        SOCIABUZZ <br>
+        (BISA PUTAR SPINN WHEEL)
+      </a>
+      <a href="https://discord.gg/bg6rXvE8MQ" class="animate__animated animate__bounceInRight animate__delay-3s center-text">
+        <img src="discord.png" alt="Discord Mabar&seruan" class="icon">Discord Mabar
+      </a>
+      <a href="https://www.tiktok.com/@putraardianss" class="animate__animated animate__bounceInRight animate__delay-1s center-text">
         <img src="tiktok.png" alt="TikTok" class="icon">TIKTOK
       </a>
-      <a href="https://instagram.com/Putraardianss" class="animate__animated animate__bounceInLeft animate__delay-2s">
+      <a href="https://instagram.com/Putraardianss" class="animate__animated animate__bounceInLeft animate__delay-2s center-text">
         <img src="instagram.png" alt="Instagram" class="icon">INSTAGRAM
+      </a>
     </div>
     <footer class="footer">
       © LinkTree by Puth Ardians
     </footer>
+  </div>
+  <!-- Sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="application/javascript" src="script.js"></script>
 </body>
-</div>
-</body>
-<!-- Sweetalert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="application/javascript" src="script.js"></script>
 
 </html>
