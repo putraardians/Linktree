@@ -14,10 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <!-- Style -->
   <link rel="stylesheet" href="style.css" />
-  <script>
-    // Paksa buka aplikasi WA lewat intent (untuk Android)
-    window.location.href = "https://whatsapp.com/channel/0029Vb5S9299hXEy1pdFMv1R";
-  </script>
 </head>
 
 <body>
@@ -47,7 +43,7 @@
         <img src="sociabuzz.png" alt="Donate" class="icon">
         SOCIABUZZ (NAMBAH BILING)
         </a>
-      <a href="/wa.html"
+      <a href="https://whatsapp.com/channel/0029Vb5S9299hXEy1pdFMv1R" onclick="showRedirectMessage(event)">
          class="animate__animated animate__bounceInRight animate__delay-1s">
          <img src="whatsapp.png" alt="Whatsapp" class="icon">NOTIFIKASI LIVE Aang
      </a>
@@ -70,6 +66,21 @@
 </div>
 </body>
 <!-- Sweetalert -->
+<script>
+  function showRedirectMessage(e) {
+    e.preventDefault();
+    Swal.fire({
+      title: 'Buka di Browser?',
+      text: 'Browser TikTok tidak mendukung link ke WhatsApp. Silakan buka di Chrome atau browser lainnya.',
+      icon: 'info',
+      confirmButtonText: 'Tetap Lanjut',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open("https://whatsapp.com/channel/0029Vb5S9299hXEy1pdFMv1R", "_blank");
+      }
+    });
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="application/javascript" src="script.js"></script>
 
